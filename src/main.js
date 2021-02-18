@@ -35,8 +35,8 @@ const paintModal = element => {
         `
       })
       document.getElementById("containCards").appendChild(card)
-      const close = document.getElementById("close");
-      close.addEventListener("click",() => {
+    const close = document.getElementById("close");
+    close.addEventListener("click",() => {
         let close = document.querySelector(".modal");
         let closeContain = document.querySelector(".modalContain");
         close.style.visibility = "hidden";
