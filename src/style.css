@@ -297,7 +297,7 @@
     border-radius: 20px 0px 0px 20px; */
   }
   h4{
-    color: #ecb04e;
+    color: #e2a33e;
     font-size: 45px;
     text-align: center;
     margin-top: 8%;
@@ -328,6 +328,7 @@
     display: none;
   }
   .modifications{
+    margin-left: 8%;
     margin-right: 30%;
     margin-top: 12%;
     display: flex;
@@ -335,6 +336,10 @@
     justify-content: space-around;
     align-content: start;
     align-items: flex-start;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    height: 70%;
+    width: 50%;
   }
   
   #close{
@@ -351,8 +356,9 @@
   .info{
     font-size: 17px;
     margin-top: 12%;
-    margin-bottom: 4%;
-    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 1%;
+    /*margin-bottom: 4%;
+    background-color: rgba(0,0,0,0.5); */
     border-radius: 20px;
     padding: 1px 2px;
     text-align: center;
@@ -370,7 +376,8 @@
     display: flex;
     align-items: baseline;
     font-size: 15px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: rgba(0,0,0,0.5); */
     border-radius: 20px;
     padding: 1px 2px;
     height: 80px;
@@ -390,6 +397,18 @@
     
     
   }
+  @media (min-width: 375px) and (max-width: 812px){ 
+  .headerContent{
+    max-width: 100px;
+  }
+  #imgLogo{
+    max-width: 100px;
+  }
+
+
+
+
+}
   
   
 
