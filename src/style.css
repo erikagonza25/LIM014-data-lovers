@@ -407,7 +407,7 @@
   }
   .imgLogo{
     width: 61px;
-    margin-top: 70%;
+    margin-top: 60%;
   }
   .mainBar nav {
     height: 129%;
@@ -415,7 +415,7 @@
 }
 .mainBar ul li {
   margin: 0px 20px;
-  padding-left: 0px;
+  padding-left: 6px;
 }
 .mainBar ul li a{
   padding-left: 15px;
