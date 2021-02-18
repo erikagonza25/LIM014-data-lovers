@@ -397,14 +397,63 @@
     
     
   }
-  @media (min-width: 375px) and (max-width: 812px){ 
-  .headerContent{
-    max-width: 100px;
+  @media (min-width: 419px) and (max-width: 812px){ 
+  
+    .headerContent{
+    max-width: 75px;
+  }
+  .logo{
+    height: 0px;
   }
   #imgLogo{
-    max-width: 100px;
+    margin-top: 56%;
+    max-width: 73px;
   }
-
+  .mainBar nav {
+    height: 129%;
+    font-size: 16px;  
+}
+.mainBar ul li {
+  margin: 0px 20px;
+  padding-left: 0px;
+}
+.mainBar ul li a{
+  padding-left: 15px;
+}
+h1{
+  font-size: 23px;
+}
+#firstParagraph{
+  font-size: 13px;
+  margin-left: 40%;
+}
+h2{
+  font-size: 27px;
+}
+#textSecond{
+  font-size: 15px;
+}
+#secondParagraph{
+  font-size: 12px;
+}
+h3{
+  font-size: 26px;
+}
+.buttonC ul {
+  padding: 0% 4%;
+  margin-left: 32%;
+  margin-top: 4.5%;  
+}
+.buttonC ul li a{
+  font-size: 91%;
+} 
+#textThird{
+  font-size: 13px;
+}
+#thirdParagraph{
+  font-size: 13px;
+  margin-left: 62%;
+}
 
 
 
