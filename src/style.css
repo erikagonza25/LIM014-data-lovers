@@ -397,7 +397,7 @@
     
     
   }
-  @media (min-width: 419px) and (max-width: 812px){ 
+  @media (min-width: 375px) and (max-width: 812px){ 
   
     .headerContent{
     max-width: 75px;
@@ -405,13 +405,13 @@
   .logo{
     height: 0px;
   }
-  #imgLogo{
-    margin-top: 56%;
-    max-width: 73px;
+  .imgLogo{
+    width: 61px;
+    margin-top: 70%;
   }
   .mainBar nav {
     height: 129%;
-    font-size: 16px;  
+    font-size: 13px;  
 }
 .mainBar ul li {
   margin: 0px 20px;
@@ -423,18 +423,24 @@
 h1{
   font-size: 23px;
 }
+#titleL{
+  border-left: 9px solid #937341;
+}
 #firstParagraph{
   font-size: 13px;
   margin-left: 40%;
+  border-left: 3px solid #937341;
 }
 h2{
   font-size: 27px;
 }
 #textSecond{
   font-size: 15px;
+  border-left: 3px solid #937341;
 }
 #secondParagraph{
   font-size: 12px;
+  border-left: 3px solid #937341;
 }
 h3{
   font-size: 26px;
@@ -449,10 +455,12 @@ h3{
 } 
 #textThird{
   font-size: 13px;
+  border-left: 3px solid #937341;
 }
 #thirdParagraph{
   font-size: 13px;
-  margin-left: 62%;
+  margin-left: 55%;
+  border-left: 3px solid #937341;
 }
 
 
