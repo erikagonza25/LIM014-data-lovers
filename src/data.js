@@ -2,22 +2,20 @@
 export const dataSort = (data, sortBy, sortOrder) => {
   if (sortBy === "name" && sortOrder === "az"){
     return data.sort((a, b)=> { 
-      if (a.name > b.name) {
-        return 1;
-      }
       if (a.name < b.name) {
         return -1;
+      } if(a.name > b.name){
+        return 1;
       }
       return 0;
     })
   }
   if (sortBy === "name" && sortOrder === "za"){
    return data.sort((a, b)=> {
-      if (a.name < b.name) {
-        return 1;
-      }
       if (a.name > b.name) {
         return -1;
+      }if(a.name < b.name){
+        return 1;
       }
       return 0;
     })
@@ -37,10 +35,7 @@ export const filterData = (data, condition) => {
 };
 //Filtrado por Nombre
 export const filterName = (data, condition) => {
-  if(condition == "all"){
-    return data;
-  }else{
-  return data.filter(nameFilter => nameFilter.id.includes(condition))}
+  return data.filter(nameFilter => nameFilter.id.includes(condition))
 };
 //Filtrado por Niveles
 export const filterLevel = (data, condition) => { 
