@@ -398,7 +398,9 @@
     
   }
   @media (min-width: 280px) and (max-width: 812px){ 
-  
+  html{
+    width: 107%;
+  }
   .headerContent{
   max-width: 75px;
   }
