@@ -467,6 +467,42 @@ h3{
   margin-left: 55%;
   border-left: 3px solid #937341;
 }
+#parraf{
+  font-size: 18px;
+}
+#selectors{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imgPlayers{
+  display: flex;
+  flex-wrap: wrap;
+  width: 178px;
+}
+input{
+  height: 32px;
+  width: 165px;
+  margin-left: 1%;
+  margin-top: 0%;
+  margin-bottom: 2%;
+}
+select{
+  height: 35px;
+  width: 165px;
+  margin-right: 2%;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+#containCards{
+    justify-content: center;
+}
+.imageB{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 }
