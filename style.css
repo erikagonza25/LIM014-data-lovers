@@ -397,7 +397,7 @@
     
     
   }
-  @media (min-width: 375px) and (max-width: 812px){ 
+  @media (min-width: 360px) and (max-width: 812px){ 
   
   .headerContent{
   max-width: 75px;
@@ -462,7 +462,6 @@ h3{
   margin-left: 55%;
   border-left: 3px solid #937341;
 }
-
 
 
 }
