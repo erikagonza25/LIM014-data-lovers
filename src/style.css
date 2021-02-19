@@ -397,7 +397,7 @@
     
     
   }
-  @media (min-width: 360px) and (max-width: 812px){ 
+  @media (min-width: 280px) and (max-width: 812px){ 
   
   .headerContent{
   max-width: 75px;
