@@ -506,6 +506,9 @@ select{
   display: flex;
   flex-wrap: wrap;
 }
+.modal{
+  height: 125vh;
+}
 
 
 }
