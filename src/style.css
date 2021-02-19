@@ -471,10 +471,13 @@ h3{
   font-size: 18px;
 }
 #selectors{
-    display: flex;
     align-content: space-between;
     flex-wrap: wrap;
     justify-content: center;
+    width: 395px;
+    height: 73px;
+    padding: 3% 5%;
+    
 }
 .imgPlayers{
   display: flex;
