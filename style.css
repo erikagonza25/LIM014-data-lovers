@@ -508,7 +508,7 @@ select{
   height: 125vh;
 }
 .modalContain{
-  margin-left: 16%;
+  margin-left: 10%;
   height: 69%;
   width: 91vw;
 }
@@ -516,7 +516,7 @@ select{
   width: 6%;
 }
 .modifications{
-  margin-left: 10%;
+  margin-left: 9%;
   margin-right: 12%;
   margin-top: 39%;
   height: 64%;
@@ -539,7 +539,7 @@ h4{
     justify-content: center;
 }
 .imgModal{
-  width: 2545%;
+  width: 2136%;
   display: flex;
 }
 .modalContent p{
