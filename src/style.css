@@ -555,7 +555,7 @@ h4{
 
 }
 }
-@media (min-width: 390px) and (max-width: 460px){
+@media (min-width: 0px) and (max-width: 280px){
   #close{
     font-size: 35px;
     margin-left: 30%;
