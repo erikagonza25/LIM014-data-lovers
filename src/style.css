@@ -558,9 +558,9 @@ h4{
 @media (min-width: 390px) and (max-width: 460px){
   #close{
     font-size: 35px;
-    margin-left: 0%;
+    margin-left: 60%;
     margin-top: 0%;
-    margin-bottom: 0%;
+    margin-bottom: 120%;
   
   }
 }
