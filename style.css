@@ -327,7 +327,7 @@
   }
   @media (min-width: 280px) and (max-width: 812px){ 
   html{
-    width: 136%;
+    width: 139%;
   }
   #firstHome{
     background-size: 100% 100%;
@@ -344,10 +344,10 @@
   }
   .mainBar nav {
     height: 129%;
-    font-size: 13px;  
+    font-size: 18px;  
 }
 .mainBar ul {
-  margin-left: 14%;
+  margin-left: 2%;
 }
 .mainBar ul li {
   margin: 0px 20px;
