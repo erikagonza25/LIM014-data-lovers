@@ -22,8 +22,7 @@ const paintModal = element => {
         openContain.style.opacity = "1";
         document.querySelector(".modalContain").innerHTML ="";
         document.querySelector(".modalContain").innerHTML +=
-        `<section class="modalContent">
-        <div class="containImg"><img class="imgModal" alt="${element[1].name}" src= "${element[1].splash}" ></div>
+        `<section class="modalContent" style="background-image: url(${element[1].splash});">
         <div class="modifications">
         <h4>${element[1].name.toUpperCase()}</h4>
         <div class = "info"><p>${element[1].blurb}</p></div>
@@ -53,7 +52,7 @@ orden.addEventListener("change", (event)=>{
     const ordenar = Object.keys(data.data).map(key =>{
         return data.data[key];
     }) 
-        let sortData = dataSort(ordenar,"name",event.target.value);
+        let sortData = dataSort(ordenar,event.target.value);
           
         const ordenO = Object.entries(sortData);
                 
@@ -103,6 +102,6 @@ document.querySelector(".levelPlayers").addEventListener("change", (event) => {
                 
             filterB.forEach(paintModal);  
 }); 
-
+//<div class="containImg"><img class="imgModal" alt="${element[1].name}" src= "${element[1].splash}" ></div>
 
 
