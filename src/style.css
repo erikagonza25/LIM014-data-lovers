@@ -326,9 +326,6 @@
   html{
     width: 150%;
   }
-  #firstHome{
-    background-size: 100% 100%;
-  }
   .headerContent{
   max-width: 75px;
   }
@@ -367,9 +364,6 @@ h1{
 h2{
   font-size: 27px;
 }
-#secondHome{
-  background-size: 100% 100%;
-}
 #textSecond{
   font-size: 13px;
   border-left: 3px solid #937341;
@@ -377,9 +371,6 @@ h2{
 #secondParagraph{
   font-size: 13px;
   border-left: 3px solid #937341;
-}
-#thirdHome{
-  background-size: 100% 100%;
 }
 h3{
   font-size: 26px;
@@ -489,50 +480,19 @@ h4{
   #close{
     margin-left: -331px;
 }
-.mainBar ul {
-  margin-left: 122%;
-}
  }
  @media (min-width: 500px) and (max-width: 795px){
   #close{
     margin-left: -283px;
 }
-.mainBar ul {
-  margin-left: 73%;
-}
  }
-  @media (min-width: 425px) and (max-width: 487px){
-    html{
-      width: 145%;
-    }
-    }
-  @media (min-width: 500px) and (max-width: 554px){
-    html{
-      width: 145%;
-      } 
-      }
-  @media (min-width: 602px) and (max-width: 711px){
-  html{
-    width: 132%;
-  } 
-  }
- @media (min-width: 711px) and (max-width: 794px){
+ @media (min-width: 768px) and (max-width: 1023px){
    html{
-     width: 103%;
+    width: 108%;
    }
-   #thirdHome{
-    padding-bottom: 15%;
-   }
-   
  }
- @media (min-width: 794px) and (max-width: 1022px){
-  html{
-    width: 116%;
-  }
-  #thirdHome{
-    padding-bottom: 15%;
-   }
-}
+
+
 
 
 
