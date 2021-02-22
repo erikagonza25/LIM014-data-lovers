@@ -302,13 +302,13 @@
   
   #close{
     color: white;
-    font-size: 22px;
-    background-color: rgba(0,0,0,0.1);
-    border-color: rgba(0,0,0,0.0);
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.4);
     border-radius: 10px;
-    margin-left: -92px;
-    margin-bottom: 514px;
+    margin-left: -180px;
+    margin-bottom: 534px;
     position: relative;
+    width: 40px;
   }
   .info{
     font-size: 17px;
@@ -490,6 +490,7 @@ h4{
 #close{
   font-size: 28px;
   margin-bottom: 600px;
+  margin-left: -96px;
 }
 }
 @media (max-width: 360px) {
