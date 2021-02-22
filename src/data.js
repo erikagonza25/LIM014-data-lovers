@@ -1,26 +1,22 @@
 // Filtrado por orden A-Z/ Z-A
-export const dataSort = (data, sortBy, sortOrder) => {
-  if (sortBy === "name" && sortOrder === "az"){
-    return data.sort((a, b)=> { 
-      if (a.name < b.name) {
-        return -1;
-      } if(a.name > b.name){
-        return 1;
-      }
-      return 0;
-    })
-  }
-  if (sortBy === "name" && sortOrder === "za"){
-   return data.sort((a, b)=> {
-      if (a.name > b.name) {
-        return -1;
-      }if(a.name < b.name){
-        return 1;
-      }
-      return 0;
-    })
+export const dataSort = (data,sortOrder) => {
+  switch (sortOrder) {
+    case 'az':
+      return sortName(data).reverse()
+    case 'za':
+      return sortName(data)
   }
 };
+export const sortName = (data) => {
+  return data.sort((a, b)=> {
+    if (a.name > b.name) {
+      return -1;
+    }if(a.name < b.name){
+      return 1;
+    }
+    return 0;
+  })
+}
 //Filtrado por Roles
 export const filterData = (data, condition) => {
   let result = [];
@@ -39,12 +35,12 @@ export const filterName = (data, condition) => {
 };
 //Filtrado por Niveles
 export const filterLevel = (data, condition) => { 
-  if(condition === "facil"){
-    return data.filter(({ info }) => info.difficulty <= 3);
-  } else if(condition === "medio"){
-    return data.filter(({ info }) => info.difficulty >= 4 && info.difficulty <= 6  );
-  } else if(condition ==="dificil"){
-    return data.filter(({ info }) => info.difficulty > 6);
+  switch (condition) {
+    case 'facil':
+      return data.filter(({ info }) => info.difficulty <= 3);
+    case 'medio':
+      return data.filter(({ info }) => info.difficulty >= 4 && info.difficulty <= 6  );
+    case 'dificil':
+      return data.filter(({ info }) => info.difficulty > 6);
   }
-
  };
