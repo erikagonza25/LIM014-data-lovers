@@ -198,6 +198,7 @@
     flex-wrap: wrap;
     align-content: space-between;
     margin-right: 2%;
+    padding-bottom: 20%;
   }
   #containC{
     display: flex;
@@ -438,6 +439,7 @@ select{
 }
 #containCards{
     margin-right: 3%;
+    padding-bottom: 122%;
 }
 .imageB{
   display: flex;
