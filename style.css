@@ -302,14 +302,13 @@
   
   #close{
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     background-color: rgba(0,0,0,0.1);
     border-color: rgba(0,0,0,0.0);
     border-radius: 10px;
-    margin-left: 50%;
-    margin-top: 16%;
-    margin-bottom: 50%;
-    position: absolute;
+    margin-left: -92px;
+    margin-bottom: 514px;
+    position: relative;
   }
   .info{
     font-size: 17px;
@@ -490,10 +489,7 @@ h4{
 }
 #close{
   font-size: 28px;
-  margin-left: 60%;
-  margin-top: 0%;
-  margin-bottom: 120%;
-
+  margin-bottom: 600px;
 }
 }
 @media (max-width: 360px) {
@@ -501,6 +497,23 @@ h4{
     width: 0%;
 }
 }
+@media (min-width: 375px) and (max-width: 376px) {
+  .imgModal {
+    width: 5080%;
+} 
+}
+@media (min-width: 377px)and (max-width: 379px){
+  .imgModal {
+    width: 4091%;
+} 
+}
+@media (min-width: 380px)and (max-width: 381px){
+  .imgModal {
+    width: 3424%;
+} 
+}
+
+
 
   
   
