@@ -182,11 +182,6 @@
       margin-right: 2%;
       border-radius: 10px;
     }
-    #search{
-      width: 200px;
-      margin-right: 2%;
-      border-radius: 10px;
-    }
     select{
       width: 200px;
       margin-right: 2%;
@@ -411,12 +406,12 @@ h3{
   font-size: 26px;
 }
 #selectors{
-    align-content: space-between;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 395px;
-    height: 73px;
-    padding: 3% 5%; 
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 396px;
+  height: 111px;
+  padding: 3% 5%;
 }
 .imgPlayers{
   display: flex;
@@ -424,14 +419,14 @@ h3{
   width: 178px;
 }
 input{
-  height: 32px;
+  height: 45px;
   width: 165px;
   margin-left: 1%;
   margin-top: 0%;
   margin-bottom: 2%;
 }
 select{
-  height: 35px;
+  height: 45px;
   width: 165px;
   margin-right: 2%;
   border-radius: 10px;
@@ -506,9 +501,24 @@ h4{
   margin-left: 73%;
 }
  }
+  @media (min-width: 425px) and (max-width: 487px){
+    html{
+      width: 145%;
+    }
+    }
+  @media (min-width: 500px) and (max-width: 554px){
+    html{
+      width: 145%;
+      } 
+      }
+  @media (min-width: 602px) and (max-width: 711px){
+  html{
+    width: 132%;
+  } 
+  }
  @media (min-width: 711px) and (max-width: 794px){
    html{
-     width: 101%;
+     width: 103%;
    }
  }
  @media (min-width: 794px) and (max-width: 1022px){
