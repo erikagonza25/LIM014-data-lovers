@@ -327,7 +327,10 @@
   }
   @media (min-width: 280px) and (max-width: 812px){ 
   html{
-    width: 140%;
+    width: 136%;
+  }
+  #firstHome{
+    background-size: 100% 100%;
   }
   .headerContent{
   max-width: 75px;
@@ -342,6 +345,9 @@
   .mainBar nav {
     height: 129%;
     font-size: 13px;  
+}
+.mainBar ul {
+  margin-left: 14%;
 }
 .mainBar ul li {
   margin: 0px 20px;
@@ -364,6 +370,9 @@ h1{
 h2{
   font-size: 27px;
 }
+#secondHome{
+  background-size: 100% 100%;
+}
 #textSecond{
   font-size: 13px;
   border-left: 3px solid #937341;
@@ -371,6 +380,9 @@ h2{
 #secondParagraph{
   font-size: 13px;
   border-left: 3px solid #937341;
+}
+#thirdHome{
+  background-size: 100% 100%;
 }
 h3{
   font-size: 26px;
@@ -436,9 +448,9 @@ select{
 }
 .modalContain{
   margin-top: -14%;
-  margin-left: 11%;
-  height: 69%;
-  width: 91vw;
+  margin-left: 17%;
+  height: 74%;
+  width: 200vw;
 }
 .modalContent{
   background-size: 100% 100%;
