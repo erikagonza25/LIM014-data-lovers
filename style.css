@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
   } 
+  html{
+    width: 101%;
+  }
   header {
       background-color: rgba(0,0,0,.4);
       box-shadow: 1px 1px 5px #000;  
   }
   body{   
-    background-color: #000; 
+    background-image: url(Fondo1.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   .headerContent{
@@ -48,7 +55,7 @@
   }
   #firstHome{
       background-image: url("PrimerPersonaje2.png");
-      background-size: cover;
+      background-size: 100% 100%;
       background-repeat: no-repeat;
   }
   #titleL{
@@ -73,7 +80,7 @@
   }
    #secondHome{
       background-image: url("Viego2.png");
-      background-size: cover;
+      background-size: 100% 100%;
       background-repeat: no-repeat;
    }
    h2{
@@ -104,7 +111,7 @@
     }
      #thirdHome{
       background-image: url("Sylas1.png");
-      background-size: cover;
+      background-size: 100% 100%;
       background-repeat: no-repeat;
    }
    h3{
@@ -155,12 +162,6 @@
       font-size: 80px;
       justify-content: center;
     }
-    #page{
-      background-image: url(Fondo1.png);
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-    }
     #parraf{
       display: flex;
       font-size: 38px;
@@ -198,7 +199,7 @@
     flex-wrap: wrap;
     align-content: space-between;
     margin-right: 2%;
-    padding-bottom: 20%;
+    margin-top: 5%;
   }
   #containC{
     display: flex;
@@ -271,7 +272,7 @@
     border-radius: 20px 20px 20px 20px;
     width: 94%;
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 13%;
   }
   .modalContent p{
     color: white;
@@ -326,9 +327,9 @@
     padding-left: 5%;
     padding-top: 1%;
   }
-  @media (min-width: 280px) and (max-width: 812px){ 
+  @media (min-width: 280px) and (max-width: 1023px){ 
   html{
-    width: 139%;
+    width: 150%;
   }
   #firstHome{
     background-size: 100% 100%;
@@ -340,7 +341,7 @@
     height: 0px;
   }
   .imgLogo{
-    width: 61px;
+    width: 86px;
     margin-top: 60%;
   }
   .mainBar nav {
@@ -358,7 +359,7 @@
   padding-left: 15px;
 }
 h1{
-  font-size: 23px;
+  font-size: 35px;
 }
 #titleL{
   border-left: 9px solid #937341;
@@ -407,7 +408,7 @@ h3{
   border-left: 3px solid #937341;
 }
 #parraf{
-  font-size: 18px;
+  font-size: 26px;
 }
 #selectors{
     align-content: space-between;
@@ -439,7 +440,6 @@ select{
 }
 #containCards{
     margin-right: 3%;
-    padding-bottom: 122%;
 }
 .imageB{
   display: flex;
@@ -487,8 +487,34 @@ h4{
 #close{
   font-size: 28px;
   margin-bottom: 595px;
-  margin-left: -114px;
+  margin-left: -185px;
 }
+}
+@media (min-width: 795px) and (max-width: 1023px){
+  #close{
+    margin-left: -331px;
+}
+.mainBar ul {
+  margin-left: 122%;
+}
+ }
+ @media (min-width: 500px) and (max-width: 795px){
+  #close{
+    margin-left: -283px;
+}
+.mainBar ul {
+  margin-left: 73%;
+}
+ }
+ @media (min-width: 711px) and (max-width: 794px){
+   html{
+     width: 101%;
+   }
+ }
+ @media (min-width: 794px) and (max-width: 1022px){
+  html{
+    width: 116%;
+  }
 }
 
 
