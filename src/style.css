@@ -520,11 +520,18 @@ h4{
    html{
      width: 103%;
    }
+   #thirdHome{
+    padding-bottom: 15%;
+   }
+   
  }
  @media (min-width: 794px) and (max-width: 1022px){
   html{
     width: 116%;
   }
+  #thirdHome{
+    padding-bottom: 15%;
+   }
 }
 
 
