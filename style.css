@@ -484,7 +484,10 @@ h4{
 }
 .modalContent{
   margin-top: -267px;
-}}
+}
+#thirdHome {
+  padding-bottom: 19%;
+} }
 @media (min-width: 780px) and (max-width: 1023px){
   #close{
     margin-left: -248px;
@@ -493,7 +496,10 @@ h4{
 .modalContent{
   margin-top: -267px;
 }
+#thirdHome {
+  padding-bottom: 19%;
 } 
+}
 
 
 
