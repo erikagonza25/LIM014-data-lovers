@@ -55,7 +55,7 @@
       padding-left: 40px;
   }
   #firstHome{
-      background-image: url("PrimerPersonaje2.png");
+      background-image: url("PrimerPersonaje1.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
   }
@@ -111,7 +111,7 @@
       margin-bottom: 3%;
     }
      #thirdHome{
-      background-image: url("Sylas1.png");
+      background-image: url("Sylas2.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
    }
