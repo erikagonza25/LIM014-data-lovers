@@ -102,6 +102,6 @@ document.querySelector(".levelPlayers").addEventListener("change", (event) => {
                 
             filterB.forEach(paintModal);  
 }); 
-//<div class="containImg"><img class="imgModal" alt="${element[1].name}" src= "${element[1].splash}" ></div>
+
 
 
