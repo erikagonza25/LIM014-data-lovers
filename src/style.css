@@ -357,10 +357,12 @@ h2{
   font-size: 27px;
 }
 #textSecond{
+  margin-top: 3%;
   font-size: 13px;
   border-left: 3px solid #937341;
 }
 #secondParagraph{
+  margin-top: 10%;
   font-size: 13px;
   border-left: 3px solid #937341;
 }
@@ -376,10 +378,12 @@ h3{
   font-size: 91%;
 } 
 #textThird{
+  margin-top: 3%;
   font-size: 13px;
   border-left: 3px solid #937341;
 }
 #thirdParagraph{
+  margin-top: 10%;
   font-size: 13px;
   margin-left: 55%;
   border-left: 3px solid #937341;
@@ -482,24 +486,22 @@ h4{
     margin-left: -199px;
     margin-bottom: 881px;
 }
+
 .modalContent{
-  margin-top: -267px;
+  margin-top: -391px;
 }
-#thirdHome {
-  padding-bottom: 19%;
-} }
+ }
+
 @media (min-width: 780px) and (max-width: 1023px){
   #close{
     margin-left: -248px;
     margin-bottom: 881px;
 }
 .modalContent{
-  margin-top: -267px;
+  margin-top: -391px;
 }
-#thirdHome {
-  padding-bottom: 19%;
-} 
-}
+ }
+
 
 
 
