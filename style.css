@@ -175,6 +175,7 @@
       border-radius: 10px;
     }
     select{
+      background-color: white;
       width: 200px;
       margin-right: 2%;
       border-radius: 10px;
@@ -428,7 +429,6 @@ input{
 select{
   height: 35px;
   width: 122px;
-  background-color: white;
 }
 .modalContain {
   margin-top: -97%;
@@ -440,6 +440,18 @@ select{
 }
  }
 @media (min-width: 600px) and (max-width: 1023px){
+  #textThird{
+    margin-top: 3%;
+  }
+  #thirdParagraph{
+    margin-top: 10%;
+  }
+  #textSecond{
+  margin-top: 3%;
+  }
+  #secondParagraph{
+    margin-top: 10%;
+  }
   #close{
     font-size: 28px;
     margin-left: -107px;
@@ -449,6 +461,7 @@ select{
 .modalContent{
   margin-top: -391px;
 }
+
  }
 @media (min-width: 780px) and (max-width: 1023px){
   #close{
