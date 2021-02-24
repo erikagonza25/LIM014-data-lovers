@@ -289,7 +289,7 @@
     position: relative;
     width: 40px;
   }
-  @media (min-width: 280px) and (max-width: 1023px){ 
+  @media (min-width: 320px) and (max-width: 1023px){ 
 .logo{
     height: 50px;
   }
@@ -370,7 +370,7 @@ select{
   margin-left: 2%;
 }
 .imgPlayers{
-  width: 168px;
+  width: 143px;
 }
 .modal{
   height: 153vh;
@@ -398,19 +398,47 @@ h4{
 }
 #close{
   font-size: 28px;
-  margin-bottom: 570px;
+  margin-bottom: 841px;
   margin-left: -82px;
 }
 }
-@media (min-width: 320px) and (max-width: 345px){
-  html{
-    width: 153%;
-  }
+@media (min-width: 320px) and (max-width: 500px){
+ .headerContent{
+  display: inherit;
  }
- @media (min-width: 345px) and (max-width: 500px){
-  html{
-    width: 143%;
-  }
+ .imgLogo{
+  width: 100px;
+  margin-left: 33%;
+ }
+ .mainBar nav{
+  font-size: 16px;
+ }
+ .mainBar ul{
+  justify-content: center;
+  padding-bottom: 3%;
+ }
+ .mainBar ul li {
+  padding-left: 0px;
+}
+.mainBar ul li a {
+  padding-left: 12px;
+}
+#selectors{
+  width: 267px;
+  height: 84px;
+}
+input{
+  height: 35px;
+  width: 126px;
+}
+select{
+  height: 35px;
+  width: 122px;
+  background-color: white;
+}
+.modalContain {
+  margin-top: -97%;
+}
  }
 @media (min-width: 500px) and (max-width: 780px){
   #close{
