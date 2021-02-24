@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
   } 
-  html{
-    width: 101%;
-  }
   header {
       background-color: rgba(0,0,0,.4);
       box-shadow: 1px 1px 5px #000;  
@@ -19,11 +16,9 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   .headerContent{
-      max-width: 1700px;
       display: flex;
       justify-content: space-between;     
   }
-  
   .logo{
       height: 80px;
       display: flex;
@@ -41,12 +36,8 @@
   .mainBar ul li {
       height: 100%;
       margin: 0px 60px;
-      padding-left: 25px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      position: relative;
-      
   }
   .mainBar ul li a{
       color: white;
@@ -110,7 +101,7 @@
       margin-top: 5%;
       margin-bottom: 3%;
     }
-     #thirdHome{
+  #thirdHome{
       background-image: url("Sylas2.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
@@ -167,7 +158,6 @@
     #parraf{
       display: flex;
       font-size: 38px;
-      font-weight: 450;
       justify-content: center;
     }
     #selectors{
@@ -194,44 +184,30 @@
     justify-content: center;
     color: white;
     flex-wrap: wrap;
-    align-content: space-between;
     margin-right: 2%;
     margin-top: 5%;
   }
-  #containC{
-    display: flex;
-    color: white;
-    flex-wrap: wrap;
-    align-content: space-between;
-  }
-  
   .cardsPlayers{
     margin-left: 3%;
   }
   .imgPlayers{
     width: 252px;
   }
-
   .namePlayers{
         background-color: black;
-        padding: 5% 5%;
-        padding-bottom: 5%;
+        padding: 3% 5%;
         border-radius: 10px;
-        float: initial;
         margin-bottom: 10%;
         margin-top: -5%;
-
   }
   .imageB{
     background-color: black;
     border-color: black;
-    
   }
   .modal{
     opacity: 0;
     visibility: hidden;
     position: fixed;
-    z-index: 1000;
     width: 100%;
     height: 102vh;
     top: 0;
@@ -242,11 +218,7 @@
     align-items: center; 
     
   }
-
   .modalContain{
-    margin-left: 17%;
-    display: flex;
-    align-items: center;
     border-radius: 20px;
     visibility: hidden;
     opacity: 0;
@@ -274,7 +246,7 @@
   .modalContent p{
     color: white;
     text-align: center;
-    margin-right: 8%;
+    margin-right: 5%;
   }
   .modalContent p br{
     display: none;
@@ -289,26 +261,11 @@
     margin-right: 24%;
     margin-left: 30%;
   }
-  
-  #close{
-    color: white;
-    font-size: 30px;
-    background-color: rgba(0,0,0,0.4);
-    border-radius: 10px;
-    margin-left: -287px;
-    margin-bottom: 534px;
-    position: relative;
-    width: 40px;
-  }
   .info{
     font-size: 17px;
     margin-top: 12%;
     margin-bottom: 1%;
-    border-radius: 20px;
-    padding: 1px 2px;
-    text-align: center;
     padding-left: 7%;
-    margin-right: 3%;
     line-height: 40px;
   }
   .levels{
@@ -316,23 +273,31 @@
     margin-right: 6%;
     display: flex;
     align-items: baseline;
-    font-size: 10px;
+    font-size: 11px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    padding: 1px 2px;
-    height: 80px;
+    height: 87px;
     padding-left: 5%;
     padding-top: 1%;
+  } 
+  #close{
+    color: white;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    margin-left: -119px;
+    margin-bottom: 534px;
+    position: relative;
+    width: 40px;
   }
   @media (min-width: 280px) and (max-width: 1023px){ 
-  .logo{
+.logo{
     height: 50px;
   }
-  .imgLogo{
+.imgLogo{
     width: 86px;
   }
-  .mainBar nav {
-    height: 129%;
+.mainBar nav {
     font-size: 18px;  
 }
 .mainBar ul li {
@@ -350,7 +315,6 @@ h1{
 }
 #firstParagraph{
   font-size: 13px;
-  margin-left: 40%;
   border-left: 3px solid #937341;
 }
 h2{
@@ -368,11 +332,6 @@ h2{
 }
 h3{
   font-size: 26px;
-}
-.buttonC ul {
-  padding: 0% 4%;
-  margin-top: 3%;
-  margin-right: 3%; 
 }
 .buttonC ul li a{
   font-size: 91%;
@@ -399,51 +358,26 @@ h3{
   height: 111px;
   padding: 3% 5%;
 }
-.imgPlayers{
-  display: flex;
-  flex-wrap: wrap;
-  width: 178px;
-}
 input{
   height: 50px;
   width: 165px;
   margin-left: 1%;
-  margin-top: 0%;
   margin-bottom: 2%;
 }
 select{
   height: 50px;
   width: 165px;
-  margin-right: 2%;
-  border-radius: 10px;
   margin-bottom: 4%;
   margin-left: 2%;
 }
-#containCards{
-    margin-right: 3%;
-}
-.imageB{
-  display: flex;
-  flex-wrap: wrap;
+.imgPlayers{
+  width: 168px;
 }
 .modal{
   height: 153vh;
 }
 .modalContain{
   margin-top: -14%;
-  margin-left: 17%;
-  height: 74%;
-  width: 200vw;
-}
-.modalContent{
-  background-size: 100% 100%;
-}
-.modifications{
-  margin-left: 9%;
-  margin-right: 12%;
-  margin-top: 39%;
-  height: 50%;
-  width: 97%;
 }
 h4{
   font-size: 26px;
@@ -451,24 +385,22 @@ h4{
 .info{
   font-size: 13px;
 }
+.modifications{
+  margin-left: 9%;
+  margin-right: 12%;
+  margin-top: 39%;
+}
 .levels{
   margin-left: 14%;
-  font-size: 12px;
-  padding: 3px 60px;
-  height: 96px;
-  padding-right: 9%;
-  padding-left: 16%;
+  padding-right: 8%;
+  padding-left: 9%;
   padding-top: 0%;
   justify-content: center;
 }
-.modalContent p{
-  margin-right: 8%;
-  margin-left: 0%;
-}
 #close{
   font-size: 28px;
-  margin-bottom: 595px;
-  margin-left: -185px;
+  margin-bottom: 570px;
+  margin-left: -82px;
 }
 }
 @media (min-width: 320px) and (max-width: 345px){
@@ -483,19 +415,18 @@ h4{
  }
 @media (min-width: 500px) and (max-width: 780px){
   #close{
-    margin-left: -199px;
-    margin-bottom: 881px;
+    margin-left: -107px;
+    margin-bottom: 956px;
 }
 
 .modalContent{
   margin-top: -391px;
 }
  }
-
 @media (min-width: 780px) and (max-width: 1023px){
   #close{
-    margin-left: -248px;
-    margin-bottom: 881px;
+  margin-left: -112px;
+  margin-bottom: 1065px;
 }
 .modalContent{
   margin-top: -391px;
