@@ -320,12 +320,10 @@ h2{
   font-size: 27px;
 }
 #textSecond{
-  margin-top: 3%;
   font-size: 13px;
   border-left: 3px solid #937341;
 }
 #secondParagraph{
-  margin-top: 10%;
   font-size: 13px;
   border-left: 3px solid #937341;
 }
@@ -336,12 +334,10 @@ h3{
   font-size: 91%;
 } 
 #textThird{
-  margin-top: 3%;
   font-size: 13px;
   border-left: 3px solid #937341;
 }
 #thirdParagraph{
-  margin-top: 10%;
   font-size: 13px;
   margin-left: 55%;
   border-left: 3px solid #937341;
@@ -396,19 +392,14 @@ h4{
   padding-top: 0%;
   justify-content: center;
 }
-#close{
-  font-size: 28px;
-  margin-bottom: 841px;
-  margin-left: -82px;
 }
-}
-@media (min-width: 320px) and (max-width: 500px){
+@media (min-width: 320px) and (max-width: 599px){
  .headerContent{
   display: inherit;
  }
  .imgLogo{
   width: 100px;
-  margin-left: 33%;
+  margin-left: 35%;
  }
  .mainBar nav{
   font-size: 16px;
@@ -422,6 +413,9 @@ h4{
 }
 .mainBar ul li a {
   padding-left: 12px;
+}
+#titleL{
+   padding-left: 13%;
 }
 #selectors{
   width: 267px;
@@ -439,9 +433,15 @@ select{
 .modalContain {
   margin-top: -97%;
 }
+#close{
+  font-size: 28px;
+  margin-bottom: 825px;
+  margin-left: -82px;
+}
  }
-@media (min-width: 500px) and (max-width: 780px){
+@media (min-width: 600px) and (max-width: 1023px){
   #close{
+    font-size: 28px;
     margin-left: -107px;
     margin-bottom: 956px;
 }
@@ -452,12 +452,11 @@ select{
  }
 @media (min-width: 780px) and (max-width: 1023px){
   #close{
+  font-size: 28px;
   margin-left: -112px;
   margin-bottom: 1065px;
 }
-.modalContent{
-  margin-top: -391px;
-}
+
  }
 
 
