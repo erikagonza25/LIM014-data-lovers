@@ -290,7 +290,7 @@
     position: relative;
     width: 40px;
   }
-  @media (min-width: 320px) and (max-width: 1023px){ 
+@media (min-width: 320px) and (max-width: 1023px){ 
 .logo{
     height: 50px;
   }
@@ -454,20 +454,12 @@ select{
   }
   #close{
     font-size: 28px;
-    margin-left: -107px;
-    margin-bottom: 956px;
+    margin-left: -91px;
+    margin-bottom: 990px;
 }
 
 .modalContent{
   margin-top: -391px;
-}
-
- }
-@media (min-width: 780px) and (max-width: 1023px){
-  #close{
-  font-size: 28px;
-  margin-left: -112px;
-  margin-bottom: 1065px;
 }
 
  }
