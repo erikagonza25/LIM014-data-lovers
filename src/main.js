@@ -46,34 +46,17 @@ const paintModal = element => {
     }
 //Constante para entrar en la data
 const players = Object.entries(data.data);
-// Constante para entrar y recorrer la data en los filtrados
-const dataLOL = Object.keys(data.data).map(key =>{
-    return data.data[key];
-})
 // Plasmar las cards en el div "containCards"
 players.forEach(paintModal);
+// Constante para entrar y recorrer la data en los filtrados
+const dataLOL = Object.keys(data.data).map(key =>{
+    return data.data[key];})
 //Plasmar en el selector la función orden alfabetico
-orden.addEventListener("change", (event)=>{
-    document.getElementById("containCards").innerHTML="";
-        let sortData = dataSort(dataLOL,event.target.value);
-        const ordenO = Object.entries(sortData);     
-        ordenO.forEach(paintModal);  
-}); 
+orden.addEventListener("change", () => filtroCompleto(dataLOL))
 //Plasmar en el selector la función filtrado por roles
-rolC.addEventListener("change", (event) => {
-    document.getElementById("containCards").innerHTML="";
-        let dataFilter = filterData(dataLOL,event.target.value);
-        const filterR = Object.entries(dataFilter);      
-        filterR.forEach(paintModal); 
-        
-}); 
+rolC.addEventListener("change", () => filtroCompleto(dataLOL))
 //Plasmar en el selector la función filtrado por nombre
-searchPlayers.addEventListener("change", (event) => {
-    document.getElementById("containCards").innerHTML="";
-        let nameFilter = filterName(dataLOL, event.target.value);
-        const filterB = Object.entries(nameFilter);    
-        filterB.forEach(paintModal);  
-}); 
+searchPlayers.addEventListener("change", () => filtroCompleto(dataLOL));
 //Constante para la creación del datalist
 const optionName = Object.keys(data.data);
 //  Creación de las opciones del datalist;
@@ -83,13 +66,21 @@ optionName.forEach(function(data){
         datalistSearch.appendChild(optionSearch);
 });
 //Plasmar en el selector la función filtrado por niveles de dificultad
-levelC.addEventListener("change", (event) => {
+levelC.addEventListener("change", () => filtroCompleto(dataLOL));
+function filtroCompleto (data){
     document.getElementById("containCards").innerHTML="";
-            let playersFilter = filterLevel(dataLOL, event.target.value);
-            const filterN = Object.entries(playersFilter); 
+    const roles = rolC.value;
+    const niveles = levelC.value;
+    const nombre = searchPlayers.value;
+    const ordenando = orden.value;
+    let dataFilter = filterData(data,roles);
+    let playersFilter = filterLevel(dataFilter, niveles);
+    let nameFilter = filterName(playersFilter, nombre);
+    let sortData = dataSort(nameFilter,ordenando);
+    
+            const filterN = Object.entries(sortData); 
             filterN.forEach(paintModal); 
-            
-}); 
+}
 
 
 
