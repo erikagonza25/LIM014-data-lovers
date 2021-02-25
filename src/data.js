@@ -5,6 +5,9 @@ export const dataSort = (data,sortOrder) => {
       return sortName(data).reverse()
     case 'za':
       return sortName(data)
+
+      default :
+      return data
   }
 };
 export const sortName = (data) => {
@@ -19,6 +22,9 @@ export const sortName = (data) => {
 }
 //Filtrado por Roles
 export const filterData = (data, condition) => {
+  if(condition === ""){
+    return data
+  }
   let result = [];
   for (let i = 0; i < data.length; i++){
     for (let e = 0; e < data[i].tags.length; e++){
@@ -42,5 +48,8 @@ export const filterLevel = (data, condition) => {
       return data.filter(({ info }) => info.difficulty >= 4 && info.difficulty <= 6  );
     case 'dificil':
       return data.filter(({ info }) => info.difficulty > 6);
+      
+      default :
+      return data;
   }
  };
