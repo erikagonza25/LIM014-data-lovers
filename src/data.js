@@ -22,14 +22,13 @@ export const sortName = (data) => {
 }
 //Filtrado por Roles
 export const filterData = (data, condition) => {
-  if(condition === ""){
-    return data
-  }
   let result = [];
   for (let i = 0; i < data.length; i++){
     for (let e = 0; e < data[i].tags.length; e++){
       if(data[i].tags[e] === condition){
         result.push(data[i])
+      } else if(condition === ""){
+        return data
       }
     }
   }
