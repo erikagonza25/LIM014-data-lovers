@@ -52,11 +52,13 @@ players.forEach(paintModal);
 const dataLOL = Object.keys(data.data).map(key =>{
     return data.data[key];})
 //Plasmar en el selector la función orden alfabetico
-orden.addEventListener("change", () => filtroCompleto(dataLOL))
+orden.addEventListener("change", () => filterAll(dataLOL))
 //Plasmar en el selector la función filtrado por roles
-rolC.addEventListener("change", () => filtroCompleto(dataLOL))
+rolC.addEventListener("change", () => filterAll(dataLOL))
 //Plasmar en el selector la función filtrado por nombre
-searchPlayers.addEventListener("change", () => filtroCompleto(dataLOL));
+searchPlayers.addEventListener("change", () => filterAll(dataLOL));
+//Plasmar en el selector la función filtrado por niveles de dificultad
+levelC.addEventListener("change", () => filterAll(dataLOL));
 //Constante para la creación del datalist
 const optionName = Object.keys(data.data);
 //  Creación de las opciones del datalist;
@@ -65,18 +67,17 @@ optionName.forEach(function(data){
         optionSearch.value = data;
         datalistSearch.appendChild(optionSearch);
 });
-//Plasmar en el selector la función filtrado por niveles de dificultad
-levelC.addEventListener("change", () => filtroCompleto(dataLOL));
-function filtroCompleto (data){
+//Función para unir los filtros 
+function filterAll (data){
     document.getElementById("containCards").innerHTML="";
     const roles = rolC.value;
-    const niveles = levelC.value;
-    const nombre = searchPlayers.value;
-    const ordenando = orden.value;
+    const levelsChampion = levelC.value;
+    const nameChapions = searchPlayers.value;
+    const sortingOut = orden.value;
     let dataFilter = filterData(data,roles);
-    let playersFilter = filterLevel(dataFilter, niveles);
-    let nameFilter = filterName(playersFilter, nombre);
-    let sortData = dataSort(nameFilter,ordenando);
+    let playersFilter = filterLevel(dataFilter, levelsChampion);
+    let nameFilter = filterName(playersFilter, nameChapions);
+    let sortData = dataSort(nameFilter,sortingOut);
     
             const filterN = Object.entries(sortData); 
             filterN.forEach(paintModal); 
