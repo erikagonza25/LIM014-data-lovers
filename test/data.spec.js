@@ -229,6 +229,9 @@ describe("dataSort", () => {
   it("deberia ordenar los personajes de la A-Z", () => {
     expect(dataSort(testLol,"az")).toEqual(testOrderAz);
   });
+  it("deberia retornar toda la data", () => {
+    expect(dataSort(testLol)).toEqual(testLol);
+  });
 });
 
 describe("filterData", () => {
@@ -241,6 +244,9 @@ describe("filterData", () => {
   });
   it("debería devolver un campeon por su Rol", () => {
     expect(filterData(testLol, "Assassin")).toEqual(assassinTest);
+  });
+  it("deberia retornar toda la data", () => {
+    expect(filterData(testLol, "")).toEqual(testLol);
   });
 });
 
@@ -265,6 +271,9 @@ describe("filterLevel", () => {
   });
   it("debería devolvelos los personajes Díficiles ", () => {
     expect(filterLevel(testLol, "dificil")).toEqual(testLevel);
+  });
+  it("deberia retornar toda la data", () => {
+    expect(filterLevel(testLol)).toEqual(testLol);
   });
 });
 
