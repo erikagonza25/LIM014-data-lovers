@@ -5,6 +5,9 @@ export const dataSort = (data,sortOrder) => {
       return sortName(data).reverse()
     case 'za':
       return sortName(data)
+
+      default :
+      return data
   }
 };
 export const sortName = (data) => {
@@ -24,6 +27,8 @@ export const filterData = (data, condition) => {
     for (let e = 0; e < data[i].tags.length; e++){
       if(data[i].tags[e] === condition){
         result.push(data[i])
+      } else if(condition === ""){
+        return data
       }
     }
   }
@@ -42,5 +47,8 @@ export const filterLevel = (data, condition) => {
       return data.filter(({ info }) => info.difficulty >= 4 && info.difficulty <= 6  );
     case 'dificil':
       return data.filter(({ info }) => info.difficulty > 6);
+      
+      default :
+      return data;
   }
  };
