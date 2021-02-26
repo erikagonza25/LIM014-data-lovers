@@ -52,9 +52,9 @@ players.forEach(paintModal);
 const dataLOL = Object.keys(data.data).map(key =>{
     return data.data[key];})
 //Plasmar en el selector la función orden alfabetico
-orden.addEventListener("change", () => filterAll(dataLOL))
+orden.addEventListener("change", () => filterAll(dataLOL));
 //Plasmar en el selector la función filtrado por roles
-rolC.addEventListener("change", () => filterAll(dataLOL))
+rolC.addEventListener("change", () => filterAll(dataLOL));
 //Plasmar en el selector la función filtrado por nombre
 searchPlayers.addEventListener("change", () => filterAll(dataLOL));
 //Plasmar en el selector la función filtrado por niveles de dificultad
