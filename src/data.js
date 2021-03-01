@@ -1,9 +1,9 @@
 // Filtrado por orden A-Z/ Z-A
 export const dataSort = (data,sortOrder) => {
   switch (sortOrder) {
-    case 'az':
+    case "az":
       return sortName(data).reverse()
-    case 'za':
+    case "za":
       return sortName(data)
 
       default :
@@ -36,15 +36,14 @@ export const filterData = (data, condition) => {
 };
 //Filtrado por Nombre
 export const filterName = (data, condition) => data.filter(nameFilter => nameFilter.id.includes(condition));
-
 //Filtrado por Niveles
 export const filterLevel = (data, condition) => { 
   switch (condition) {
-    case 'facil':
+    case "facil":
       return data.filter(({ info }) => info.difficulty <= 3);
-    case 'medio':
+    case "medio":
       return data.filter(({ info }) => info.difficulty >= 4 && info.difficulty <= 6  );
-    case 'dificil':
+    case "dificil":
       return data.filter(({ info }) => info.difficulty > 6);
       
       default :
