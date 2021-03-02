@@ -9,10 +9,10 @@ let datalistSearch = document.getElementById("search")
 // Función que contiene las cards y las ventanas modales
 const paintModal = element => {
     const card = document.createElement("div")
-    card.innerHTML = `<button class="imageB" widht=130 ><img class="imgPlayers" alt="${element[1].name}" src= "${element[1].splash}"></button>
-    <div class="namePlayers"<p> ${element[1].name.toUpperCase()} </p></div>`
+    card.innerHTML = `<button class="imageB" widht=130 ><img class="imgPlayers" alt="${element[1].name}" src= "${element[1].splash}">
+    <div class="namePlayers"<p> ${element[1].name.toUpperCase()} </p></div></button>`
     card.className ="cardsPlayers"
-
+    document.getElementById("containCards").appendChild(card);
     card.addEventListener("click",() => {
         let open = document.querySelector(".modal");
         let openContain = document.querySelector(".modalContain");
@@ -25,7 +25,8 @@ const paintModal = element => {
         `<section class="modalContent" style="background-image: url(${element[1].splash});">
         <div class="modifications">
         <h4>${element[1].name.toUpperCase()}</h4>
-        <div class = "info"><p>${element[1].blurb}</p></div>
+        <div class = "info"><p>${element[1].blurb}</p>
+        <h5>Roles: ${element[1].tags}</h5></div>
         <div class = "levels"><p><img src="defensa.png">Defensa:  ${element[1].info.defense}</p>
         <p><img src="ataque.png">Ataque:  ${element[1].info.attack}</p>
         <p><img src="magia.png">Magia:  ${element[1].info.magic}</p>
@@ -33,7 +34,6 @@ const paintModal = element => {
         </section>
         `
       })
-      document.getElementById("containCards").appendChild(card)
     const close = document.getElementById("close");
     close.addEventListener("click",() => {
         let close = document.querySelector(".modal");

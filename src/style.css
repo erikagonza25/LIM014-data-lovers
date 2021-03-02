@@ -190,20 +190,26 @@
   }
   .cardsPlayers{
     margin-left: 3%;
+    margin-bottom: 21px;
   }
   .imgPlayers{
     width: 252px;
   }
   .namePlayers{
-        background-color: black;
-        padding: 3% 5%;
-        border-radius: 10px;
-        margin-bottom: 10%;
-        margin-top: -5%;
+    font-size: 15px;
+    color: white;
+    padding: 2% 2%;
+    display: flex;
+    margin-left: 1%;
   }
   .imageB{
     background-color: black;
     border-color: black;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .imageB:hover{
+    background-color: #e2a33e;
+    border-color: #e2a33e;    
   }
   .modal{
     opacity: 0;
@@ -267,6 +273,12 @@
     margin-bottom: 1%;
     padding-left: 7%;
     line-height: 40px;
+  }
+  h5{
+    color: #e2a33e;
+    font-size: 22px;
+    text-align: center;
+    margin-right: 5%;
   }
   .levels{
     margin-left: 6%;
