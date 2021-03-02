@@ -9,8 +9,8 @@ let datalistSearch = document.getElementById("search")
 // Función que contiene las cards y las ventanas modales
 const paintModal = element => {
     const card = document.createElement("div")
-    card.innerHTML = `<button class="imageB" widht=130 ><img class="imgPlayers" alt="${element[1].name}" src= "${element[1].splash}"></button>
-    <div class="namePlayers"<p> ${element[1].name.toUpperCase()} </p></div>`
+    card.innerHTML = `<button class="imageB" widht=130 ><img class="imgPlayers" alt="${element[1].name}" src= "${element[1].splash}">
+    <div class="namePlayers"<p> ${element[1].name.toUpperCase()} </p></div></button>`
     card.className ="cardsPlayers"
     document.getElementById("containCards").appendChild(card);
     card.addEventListener("click",() => {
