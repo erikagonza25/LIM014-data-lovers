@@ -16,6 +16,8 @@ const paintModal = element => {
     card.addEventListener("click",() => {
         let open = document.querySelector(".modal");
         let openContain = document.querySelector(".modalContain");
+        let botonNew = document.querySelector(".bottonScroll");
+        botonNew.style.visibility = "hidden";
         open.style.visibility = "visible";
         open.style.opacity = "1";
         openContain.style.visibility = "visible";
@@ -38,6 +40,8 @@ const paintModal = element => {
     close.addEventListener("click",() => {
         let close = document.querySelector(".modal");
         let closeContain = document.querySelector(".modalContain");
+        let botonNew = document.querySelector(".bottonScroll");
+        botonNew.style.visibility = "visible";
         close.style.visibility = "hidden";
         close.style.opacity = "0";
         closeContain.style.visibility = "hidden";
