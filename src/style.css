@@ -7,7 +7,7 @@
       box-shadow: 1px 1px 5px #000;  
   }
   body{
-    background-image: url(Fondo1.jpg);
+    background-image: url("./image/Fondo1.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -46,7 +46,7 @@
       padding-left: 40px;
   }
   #firstHome{
-      background-image: url("PrimerPersonaje1.jpg");
+      background-image: url("./image/PrimerPersonaje1.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
   }
@@ -71,7 +71,7 @@
       margin-bottom: 3%;
   }
    #secondHome{
-      background-image: url("Viego2.png");
+      background-image: url("./image/Viego2.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
    }
@@ -102,7 +102,7 @@
       margin-bottom: 3%;
     }
   #thirdHome{
-      background-image: url("Sylas2.png");
+      background-image: url("./image/Sylas2.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
    }
