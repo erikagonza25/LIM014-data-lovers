@@ -304,6 +304,7 @@
   }
 .bottonScroll{
   visibility: visible;
+  opacity: 1;
   position: fixed;
   bottom: 4rem;
   right: 0rem;
