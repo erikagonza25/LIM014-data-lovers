@@ -18,6 +18,7 @@ const paintModal = element => {
         let openContain = document.querySelector(".modalContain");
         let botonNew = document.querySelector(".bottonScroll");
         botonNew.style.visibility = "hidden";
+        botonNew.style.opacity = "0";
         open.style.visibility = "visible";
         open.style.opacity = "1";
         openContain.style.visibility = "visible";
@@ -42,6 +43,7 @@ const paintModal = element => {
         let closeContain = document.querySelector(".modalContain");
         let botonNew = document.querySelector(".bottonScroll");
         botonNew.style.visibility = "visible";
+        botonNew.style.opacity = "1";
         close.style.visibility = "hidden";
         close.style.opacity = "0";
         closeContain.style.visibility = "hidden";
