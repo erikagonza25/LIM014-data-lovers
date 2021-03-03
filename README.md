@@ -40,8 +40,8 @@ sobre qué es el juego, cuál es el objetivo de cada partida y qué son los camp
 
 * Prototipo de baja fidelidad
 
-![Screenshot](PrototipoLol.png)
-![Screenshot](PrototipoFinalLol.png)
+![Screenshot](./imagenesReadme/PrototipoLol.png)
+![Screenshot](./imagenesReadme/PrototipoFinalLol.png)
 
 En primer lugar, realizamos un boceto sobre lo que seria la pagina de inicio sobre League of Legends, esta tendria una barra centrada para poder moverse a la pagina de campeones, pero por temas de diseño decidimos colocarla en el inicio de la pagina, al realizar el test nos dimos cuenta que faltaba un boton en la parte final de la pagina para redirigir al usuario a la pagina de campeones, sin tener que volver a subir hasta el inicio de pagina.
 
@@ -50,15 +50,15 @@ el boton calculo, lo podias poner una manera mas dinamica en la barra, por medio
 
 * Prototipo de alta fidelidad
 
-![Screenshot](PrototipoFinal1.png)
-![Screenshot](PrototipoFinal2.png)
-![Screenshot](PrototipoFinal3.png)
-![Screenshot](PrototipoFinal4.png)
+![Screenshot](./imagenesReadme/PrototipoFinal1.png)
+![Screenshot](./imagenesReadme/PrototipoFinal2.png)
+![Screenshot](./imagenesReadme/PrototipoFinal3.png)
+![Screenshot](./imagenesReadme/PrototipoFinal4.png)
 
 Creamos nuestro prototipo en figma, decidimos realizar una pagina para el inicio y otra para los campeones. El inicio cuenta con una barra superior, la cual redireccionará a la pagina de campeones o al juego en si, tambien contara con información importante del juego. En la otra página, "Elige tu campeón" se visualizarán en cartas todos los campeones, al hacer click sobre cada uno de ellos, se abre una ventana donde muestra su información mas relevante, como lo son: Niveles de ataque, defensa, magia y dificultad. En la parte superior cuenta con una barra de navegación, su función es filtrar a los campeones, ya sea por medio de su rol, orden alfabético o niveles de dificultad, para hacer este ultimo estamos sacando un promedio para poder filtrarlo solo por facil, medio o dificil. Ademas añadimos un buscar donde se podrá buscar a un campeón de manera más rápida y sencilla.
 
-![Screenshot](CartaDeCampeon1.png)
-![Screenshot](NombreDeCampeones.png)
-![Screenshot](Roles.png)
-![Screenshot](NivelesDeDificultad.png)
+![Screenshot](./imagenesReadme/CartaDeCampeon1.png)
+![Screenshot](./imagenesReadme/NombreDeCampeones.png)
+![Screenshot](./imagenesReadme/Roles.png)
+![Screenshot](./imagenesReadme/NivelesDeDificultad.png)
 
