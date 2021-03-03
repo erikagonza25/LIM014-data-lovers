@@ -27,10 +27,10 @@ const paintModal = element => {
         <h4>${element[1].name.toUpperCase()}</h4>
         <div class = "info"><p>${element[1].blurb}</p>
         <h5>Roles: ${element[1].tags}</h5></div>
-        <div class = "levels"><p><img src="defensa.png">Defensa:  ${element[1].info.defense}</p>
-        <p><img src="ataque.png">Ataque:  ${element[1].info.attack}</p>
-        <p><img src="magia.png">Magia:  ${element[1].info.magic}</p>
-        <p><img src="dificultad.png">Dificultad:  ${element[1].info.difficulty}</p></div></div>
+        <div class = "levels"><p><img src="./image/defensa.png">Defensa:  ${element[1].info.defense}</p>
+        <p><img src="./image/ataque.png">Ataque:  ${element[1].info.attack}</p>
+        <p><img src="./image/magia.png">Magia:  ${element[1].info.magic}</p>
+        <p><img src="./image/dificultad.png">Dificultad:  ${element[1].info.difficulty}</p></div></div>
         </section>
         `
       })
