@@ -81,4 +81,21 @@ function filterAll (data){
 
             const filterN = Object.entries(sortData); 
             filterN.map(paintModal); 
+//Condición para mostrar una alerta si el campeón seleccionado por su nombre, no coinde con los filtrados establecidos
+            if(nameFilter == ""){
+            alert("El campeón no cumple con los filtros asignados")}
 }
+//Función para crear un boton que lleve al inicio de pagina
+window.onscroll = function(){
+    if(document.documentElement.scrollTop>200){
+        document.querySelector(".bottonScroll").classList.add("show")
+    }else{
+        document.querySelector(".bottonScroll").classList.remove("show")
+    }
+}
+document.querySelector(".bottonScroll").addEventListener("click", () =>{
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    });
+})
