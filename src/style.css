@@ -247,7 +247,6 @@
     color: #e2a33e;
     font-size: 45px;
     text-align: center;
-    margin-top: 8%;
     margin-bottom: -6%;
   }
   .modalContent{
@@ -560,7 +559,7 @@ select{
 }
 #close{
   font-size: 28px;
-  margin-bottom: 825px;
+  margin-bottom: 808px;
   margin-left: -82px;
 }
  }
