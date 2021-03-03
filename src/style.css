@@ -303,6 +303,7 @@
     width: 40px;
   }
 .bottonScroll{
+  visibility: visible;
   position: fixed;
   bottom: 4rem;
   right: 0rem;
