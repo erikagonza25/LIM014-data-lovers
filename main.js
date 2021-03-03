@@ -62,7 +62,7 @@ levelC.addEventListener("change", () => filterAll(dataLOL));
 //Constante para la creación del datalist
 const optionName = Object.keys(data.data);
 //  Creación de las opciones del datalist;
-optionName.forEach(function(data){
+optionName.map(function(data){
         let optionSearch = document.createElement("option")
         optionSearch.value = data;
         datalistSearch.appendChild(optionSearch);
@@ -80,5 +80,5 @@ function filterAll (data){
     let sortData = dataSort(nameFilter,sortingOut);
 
             const filterN = Object.entries(sortData); 
-            filterN.forEach(paintModal); 
+            filterN.map(paintModal); 
 }
