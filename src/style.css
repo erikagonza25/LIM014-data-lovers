@@ -169,9 +169,19 @@
       margin: 20px auto;
       height: 25px;
     }
+    .containSearch{
+      display: flex;
+      margin-right: 1%;
+    }
+    .lupaImg{
+      margin-left: -12px;
+      height: 20px;
+      margin-top: 1%;
+    }
     input{
+      display: flex;
+      margin-right: -8%;
       width: 200px;
-      margin-right: 2%;
       border-radius: 10px;
     }
     select{
@@ -252,7 +262,6 @@
   .modalContent p{
     color: white;
     text-align: center;
-    margin-right: 5%;
   }
   .modalContent p br{
     display: none;
@@ -264,15 +273,14 @@
     justify-content: space-around;
     background-color: rgba(0,0,0,0.3);
     border-radius: 20px;
-    margin-right: 24%;
-    margin-left: 30%;
+    margin-right: 30%;
+    margin-left: 36%;
   }
   .info{
     font-size: 17px;
     margin-top: 12%;
     margin-bottom: 1%;
-    padding-left: 7%;
-    line-height: 40px;
+    line-height: 36px;
   }
   h5{
     color: #e2a33e;
@@ -419,6 +427,9 @@ h3{
   height: 111px;
   padding: 3% 5%;
 }
+.containSearch {
+  margin-right: 0%;
+}
 input{
   height: 50px;
   width: 165px;
@@ -481,15 +492,64 @@ h4{
   padding-left: 12px;
 }
 #titleL{
-   padding-left: 13%;
+  margin-right: 0%;
+}
+#firstParagraph{
+    padding-left: 3%;
+    margin-left: 1%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-left: 0px solid #937341;
+}
+#textSecond{
+  padding-left: 3%;
+  margin-left: 1%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-right: 1%;
+  border-left: 0px solid #937341;
+}
+#secondParagraph{
+  padding-left: 3%;
+  margin-left: 1%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  border-left: 0px solid #937341;
+}
+.buttonC ul{
+  margin-right: 2%;
+}
+.buttonC ul li{
+  margin-bottom: 6%;
+}
+.buttonC ul li a {
+  font-size: 59%;
+}
+#textThird{
+  padding-left: 3%;
+  margin-left: 1%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-right: 1%;
+  border-left: 0px solid #937341;
+}
+#thirdParagraph{
+  padding-left: 3%;
+  margin-left: 1%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  border-left: 0px solid #937341;
 }
 #selectors{
   width: 267px;
   height: 84px;
 }
+.lupaImg{
+  margin-top: 5%;
+}
 input{
   height: 35px;
-  width: 126px;
+  width: 124px;
 }
 select{
   height: 35px;
@@ -522,7 +582,9 @@ select{
     margin-left: -91px;
     margin-bottom: 990px;
 }
-
+.lupaImg{
+  margin-top: 8%;
+}
 .modalContent{
   margin-top: -391px;
 }
