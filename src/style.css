@@ -268,7 +268,6 @@
     margin-bottom: -6%;
   }
   .modalContent{
-    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     border-radius: 20px 20px 20px 20px;
@@ -276,6 +275,7 @@
     max-width: 960px;
     margin: 0 13%;
     background-size: cover;
+    background-position: center;
   }
   .modalContent p{
     color: white;
@@ -314,9 +314,9 @@
     color: #fff;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-right: 5%;
+    align-items: center;
   }
   .list-roles li {
     margin-right: 0.3rem;
@@ -333,12 +333,19 @@
   } 
   .levels p {
     padding: 0;
-    margin: 0 0.3rem;
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .levels img {
+    width: 50px;
   }
   .close{
     color: white;
-    font-size: 30px;
-    background-color: rgba(0,0,0,0.4);
+    font-size: 23px;
+    background-color: rgb(0 0 0);
     border-radius: 10px;
     position: relative;
     width: 40px;
@@ -360,7 +367,7 @@
     border: none;
     color: white
   }
-  #btnReset:hover {
+  #btnReset:hover, .close:hover {
     box-shadow: 1px 1px 5px #000;
   }
 .bottonScroll{
@@ -395,8 +402,8 @@
 }
 .show .pressButton{
   animation: popup .3s ease-in-out;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 5rem;
+  height: 5rem;
   z-index: 11;
 }
 .show p{
@@ -454,6 +461,13 @@
   }
   .shadow-img {
     background: #0000007a;
+  }
+  .levels img {
+    width: 35px;
+  }
+  .show .pressButton {
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }
 

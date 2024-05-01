@@ -50,10 +50,10 @@ const paintModal = element => {
                         </ul>
                     </div>
                     <div class="levels">
-                        <p><img src="./image/defensa.png">Defensa:  ${element[1].info.defense}</p>
-                        <p><img src="./image/ataque.png">Ataque:  ${element[1].info.attack}</p>
-                        <p><img src="./image/magia.png">Magia:  ${element[1].info.magic}</p>
-                        <p><img src="./image/dificultad.png">Dificultad:  ${element[1].info.difficulty}</p>
+                        <p><img src="./image/defensa.png"><span>Defensa:  ${element[1].info.defense}</span></p>
+                        <p><img src="./image/ataque.png"><span>Ataque:  ${element[1].info.attack}</span></p>
+                        <p><img src="./image/magia.png"><span>Magia:  ${element[1].info.magic}</span></p>
+                        <p><img src="./image/dificultad.png"><span>Dificultad:  ${element[1].info.difficulty}</span></p>
                     </div>
                 </div>
             </section>
