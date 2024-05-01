@@ -4,71 +4,89 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./image/iconLogo.png">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+
   </head>
   <body>
     <header>
-      <div class="headerContent">
-        <div class="logo">
-          <img src="./image/logo.png" class="imgLogo" alt="logo" width="150">
-        </div>
-        <div class="mainBar">
-          <nav class="navContainer">
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="campeones.html">Campeones</a></li>
-              <li><a href="https://signup.lan.leagueoflegends.com/es/signup/index">Quiero Jugar</a></li>  
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./image/logo.png" class="imgLogo" alt="logo" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-link"><a href="index.html">Inicio</a></li>
+              <li class="nav-link active"><a href="campeones.html">Campeones</a></li>
+              <li class="nav-link"><a href="https://signup.lan.leagueoflegends.com/es/signup/index" target="_blank">Quiero Jugar</a></li>  
             </ul>
-          </nav>
+            </div>
         </div>
-      </div>
+      </nav>
     </header>
-  <main>
-  <section id="page">
-  <br>
-  <p id="parraf">Elige a tu </p>
-  <h1>Campeón</h1>
-  <section id= "selectors">
-   <section class="containSearch"><input type="search" id="searchOne" list="search" placeholder=" Buscar">
-    <img src="./image/lupa1.png" alt="Lupa" width="20" class="lupaImg"></section> 
-  <datalist id="search">
-  </datalist>
-<select class="selector" name="Roles">
-  <option value="" disabled selected>Roles</option>
-  <option value="Assassin">Asesinos</option>
-  <option value="Fighter">Luchadores</option>
-  <option value="Mage">Magos</option>
-  <option value="Marksman">Tiradores</option>
-  <option value="Support">Apoyo</option>
-  <option value="Tank">Tanques</option>
-</select>
-<select class="orden" name="Orden" >
-  <option value="" disabled selected>Orden</option>
-  <option value="az">A-Z</option>
-  <option value="za">Z-A</option>
-</select>
-<select class ="levelPlayers" name="Niveles de Dificultad" >
-  <option value="" disabled selected>Niveles de Dificultad</option>
-  <option value="facil">Fácil</option>
-  <option value="medio">Medio</option>
-  <option value="dificil">Difícil</option>
-</select>
-  </section>
-  <div id="containCards"></div>
-  <div class="modal">
-  <div class="modalContain"></div>
-  <section>
-    <button id="close">X</button>
-  </section>
-  </div>
-  <div class="bottonScroll">
-    <div class="pressButton">
-      <p><img src="./image/flechas.png" alt=""></p>
-    </div>
-  </div>
-  </section>
-</main>
-  <script src="main.js" type="module"></script>
-</body>
+    <main>
+      <section id="page">
+        <br>
+        <p id="parraf">Elige a tu </p>
+        <h1>Campeón</h1>
+          <section id="selectors" >
+            <div class="row flex-container-selectors"> 
+                <section class="col-md-4 mt-2">
+                  <select id="searchOne" class="form-control" placeholder="Buscar">
+                  </select>
+                </section> 
+                <section class="col-md-3">
+                  <select class="selector form-select mt-2" name="Roles">
+                    <option value="" disabled selected>Roles</option>
+                    <option value="Assassin">Asesinos</option>
+                    <option value="Fighter">Luchadores</option>
+                    <option value="Mage">Magos</option>
+                    <option value="Marksman">Tiradores</option>
+                    <option value="Support">Apoyo</option>
+                    <option value="Tank">Tanques</option>
+                  </select>
+                </section>
+              <section class="col-md-3">
+                  <select class="orden form-select mt-2" name="Orden" >
+                    <option value="" disabled selected>Orden</option>
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                  </select>
+              </section>
+              <section class="col-md-3">
+                <select class ="levelPlayers form-select mt-2" name="Niveles de Dificultad" >
+                  <option value="" disabled selected>Niveles de Dificultad</option>
+                  <option value="facil">Fácil</option>
+                  <option value="medio">Medio</option>
+                  <option value="dificil">Difícil</option>
+                </select>
+              </section>
+              <section class="col-md-2 mt-2">
+                <button id="btnReset" type="button" class="btn btn-light"><i class="fa-solid fa-arrows-rotate"></i></button>
+              </section>
+            </div>
+            
+          </section>
+          <div id="containCards"></div>
+          <div class="modal">
+          <div class="modalContain"></div>
+          </div>
+        <div class="bottonScroll">
+          <div class="pressButton">
+            <p><img src="./image/flechas.png" alt=""></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> 
+    <script src="https://kit.fontawesome.com/446239ca2a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

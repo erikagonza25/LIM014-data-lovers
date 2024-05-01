@@ -3,7 +3,7 @@
     padding: 0;
   } 
   header {
-      background-color: rgba(0,0,0,.4);
+      background-color: rgb(0 0 0 / 72%);
       box-shadow: 1px 1px 5px #000;  
   }
   body{
@@ -15,9 +15,27 @@
     background-color: #000; 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  .headerContent{
-      display: flex;
-      justify-content: space-between;     
+  .navbar-toggler {
+    border: 1px solid white;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .navbar-brand, .nav-link {
+    margin: 0
+  }
+  .navbar-brand a {
+      border-bottom: 0 !important;
+  }
+  .nav-link a {
+      color: white !important;
+      font-size: 19px;
+      text-decoration: none;
+  }
+  .active {
+    border-bottom: 3px solid #e2a33e !important;
+    font-weight: 500 !important;
   }
   .logo{
       height: 80px;
@@ -25,30 +43,19 @@
       align-items: center;
       margin-left: 5%;
   }
-  .mainBar nav {
-      height: 130%;
-      font-size: 25px;   
+  .shadow-img {
+    background: #00000020;
+    
   }
-  .mainBar ul {
-      height: 75%;
-      display: flex;
-  }
-  .mainBar ul li {
-      height: 100%;
-      margin: 0px 60px;
-      display: flex;
-      align-items: center;
-  }
-  .mainBar ul li a{
-      color: white;
-      text-decoration: none;
-      border-left: 2px solid #937341;
-      padding-left: 40px;
+  .height-100-destokp {
+    height: 100vh;
   }
   #firstHome{
-      background-image: url("./image/PrimerPersonaje1.jpg");
-      background-size: 100% 100%;
+      background-image: url("./image/ahri.jpg");
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
   }
   #titleL{
      font-size: 45px;
@@ -61,22 +68,24 @@
       margin-top: 10%;
   }
   #firstParagraph{
-      font-size: 28px;
+      font-size: 20px;
       color: white;
       border-left: 5px solid #937341;
       padding-left: 3%;
       margin-left: 40%;
       margin-right: 1%;
-      margin-top: 5%;
+      margin-top: 10%;
       margin-bottom: 3%;
   }
    #secondHome{
-      background-image: url("./image/Viego2.png");
-      background-size: 100% 100%;
+      background-image: url("./image/ekko.jpg");
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
    }
    h2{
-     font-size: 50px;
+     font-size: 40px;
       color: white;
       font-weight: 300;
       margin-left: 5%;
@@ -84,99 +93,108 @@
       padding-bottom: 2%;
    }
    #textSecond{
-      font-size: 28px;
+      font-size: 20px;
       color: white;
       border-left: 5px solid #937341;
       padding-left: 3%;
       margin-left: 5%;
       margin-right: 65%;
+      margin-top: 5%;
     }
   #secondParagraph{
-      font-size: 28px;
+      font-size: 20px;
       color: white;
       border-left: 5px solid #937341;
       padding-left: 3%;
       margin-left: 55%;
       margin-right: 1%;
-      margin-top: 5%;
       margin-bottom: 3%;
     }
   #thirdHome{
-      background-image: url("./image/Sylas2.png");
-      background-size: 100% 100%;
+      background-image: url("./image/darius.jpg");
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
    }
    h3{
-      font-size: 50px;
+      font-size: 40px;
       color: white;
       font-weight: 300;
       margin-left: 5%;
-      padding-top: 2%;
-      padding-bottom: 2%;
    }
    .buttonC{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
   }
   .buttonC ul {
-      background-color: #FFEA2F;
-      padding: 1% 4%;
+      background-color: #e2a33e;
+      padding: 0.3rem 1rem;
+      margin: 0;
       border-radius: 25px;
-      margin-top: 2.5%;
-      margin-right: 3%;
-      margin-bottom: auto;
       list-style: none;  
   }
   .buttonC ul li a{
-      color: black;
+      color: white;
+      font-weight: bold;
       text-decoration: none;
-      font-size: 150%;
+      font-size: 18px;
   }
    #textThird{
-      font-size: 28px;
+      font-size: 20px;
       color: white;
       border-left: 5px solid #937341;
       padding-left: 3%;
       margin-left: 5%;
       margin-right: 65%;
+      margin-top: 5%;
     }
   #thirdParagraph{
-      font-size: 28px;
+      font-size: 20px;
       color: white;
       border-left: 5px solid #937341;
       padding-left: 3%;
       margin-left: 68%;
       margin-right: 1%;
-      margin-top: 5%;
+      margin-top: 10%;
       margin-bottom: 3%;
     }
     h1{
       display: flex;
-      font-size: 80px;
+      font-size: 40px;
       justify-content: center;
     }
     #parraf{
       display: flex;
-      font-size: 38px;
+      font-size: 30px;
       justify-content: center;
+      padding: 0;
+      margin: 0;
     }
-    #selectors{
+    #selectors {
+      padding: 1rem 1rem 1rem 0;
+      padding: 0 3rem;
+    }
+    .flex-container-selectors{
       display: flex;
       background-color: rgba(0,0,0,.4);
-      box-shadow: 1px 1px 5px #000;
-      padding: 1% 5%;
-      width: 800px;
-      margin: 20px auto;
-      height: 25px;
+      padding: 1rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
     }
-    .containSearch{
-      display: flex;
-      margin-right: 1%;
+    .choices {
+      width: 100%;
     }
-    .lupaImg{
-      margin-left: -12px;
-      height: 20px;
-      margin-top: 1%;
+    .choices__inner {
+      border-radius: .375rem !important;
+      padding: .375rem 2.25rem .375rem .75rem !important;
+      min-height: 0 !important;
+      font-size: 1rem !important;
+    }
+    .choices__list--single {
+      padding: 0 !important;
     }
     input{
       display: flex;
@@ -257,6 +275,7 @@
     width: 94%;
     max-width: 960px;
     margin: 0 13%;
+    background-size: cover;
   }
   .modalContent p{
     color: white;
@@ -266,14 +285,18 @@
     display: none;
   }
   .modifications{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 18%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgb(0 0 0 / 86%);
     border-radius: 20px;
-    margin-right: 30%;
-    margin-left: 36%;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 1rem;
   }
   .info{
     font-size: 17px;
@@ -287,27 +310,58 @@
     text-align: center;
     margin-right: 5%;
   }
-  .levels{
-    margin-left: 6%;
-    margin-right: 6%;
+  .list-roles {
+    color: #fff;
+    padding: 0;
     display: flex;
-    align-items: baseline;
-    font-size: 11px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 5%;
+  }
+  .list-roles li {
+    margin-right: 0.3rem;
+    list-style: none;
+  }
+  .levels{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    height: 87px;
-    padding-left: 5%;
-    padding-top: 1%;
+    padding: 1rem;
+
   } 
-  #close{
+  .levels p {
+    padding: 0;
+    margin: 0 0.3rem;
+  }
+  .close{
     color: white;
     font-size: 30px;
     background-color: rgba(0,0,0,0.4);
     border-radius: 10px;
-    margin-left: -119px;
-    margin-bottom: 534px;
     position: relative;
     width: 40px;
+  }
+  .container-close-destokp {
+    align-items: flex-start;
+    position: absolute;
+    top: 17px;
+    right: -45px;
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+  }
+  #close-mobile {
+    display: none;
+  }
+  #btnReset {
+    background: #e2a33e;
+    border: none;
+    color: white
+  }
+  #btnReset:hover {
+    box-shadow: 1px 1px 5px #000;
   }
 .bottonScroll{
   visibility: visible;
@@ -362,233 +416,46 @@
     height: 6.6rem;
   }
 }
-@media (min-width: 320px) and (max-width: 1023px){ 
-.logo{
-    height: 50px;
+@media (max-width: 769px){
+  h1{
+    font-size: 35px;
   }
-.imgLogo{
-    width: 86px;
+  #parraf, h2, h3{
+    font-size: 20px;
   }
-.mainBar nav {
-    font-size: 18px;  
-}
-.mainBar ul li {
-  margin: 0px 20px;
-  padding-left: 6px;
-}
-.mainBar ul li a{
-  padding-left: 15px;
-}
-h1{
-  font-size: 35px;
-}
-#titleL{
-  border-left: 9px solid #937341;
-}
-#firstParagraph{
-  font-size: 13px;
-  border-left: 3px solid #937341;
-}
-h2{
-  font-size: 27px;
-}
-#textSecond{
-  font-size: 13px;
-  border-left: 3px solid #937341;
-}
-#secondParagraph{
-  font-size: 13px;
-  border-left: 3px solid #937341;
-}
-h3{
-  font-size: 26px;
-}
-.buttonC ul li a{
-  font-size: 91%;
-} 
-#textThird{
-  font-size: 13px;
-  border-left: 3px solid #937341;
-}
-#thirdParagraph{
-  font-size: 13px;
-  margin-left: 55%;
-  border-left: 3px solid #937341;
-}
-#parraf{
-  font-size: 26px;
-}
-#selectors{
-  align-content: space-between;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 396px;
-  height: 111px;
-  padding: 3% 5%;
-}
-.containSearch {
-  margin-right: 0%;
-}
-input{
-  height: 50px;
-  width: 165px;
-  margin-left: 1%;
-  margin-bottom: 2%;
-}
-select{
-  height: 50px;
-  width: 165px;
-  margin-bottom: 4%;
-  margin-left: 2%;
-}
-.imgPlayers{
-  width: 143px;
-}
-.modal{
-  height: 153vh;
-}
-.modalContain{
-  margin-top: -14%;
-}
-h4{
-  font-size: 26px;
-}
-.info{
-  font-size: 13px;
-}
-.modifications{
-  margin-left: 9%;
-  margin-right: 12%;
-  margin-top: 39%;
-}
-.levels{
-  margin-left: 14%;
-  padding-right: 8%;
-  padding-left: 9%;
-  padding-top: 0%;
-  justify-content: center;
-}
-}
-@media (min-width: 320px) and (max-width: 599px){
- .headerContent{
-  display: inherit;
- }
- .imgLogo{
-  width: 100px;
-  margin-left: 35%;
- }
- .mainBar nav{
-  font-size: 16px;
- }
- .mainBar ul{
-  justify-content: center;
-  padding-bottom: 3%;
- }
- .mainBar ul li {
-  padding-left: 0px;
-}
-.mainBar ul li a {
-  padding-left: 12px;
-}
-#titleL{
-  margin-right: 0%;
-}
-#firstParagraph{
-    padding-left: 3%;
-    margin-left: 1%;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    border-left: 0px solid #937341;
-}
-#textSecond{
-  padding-left: 3%;
-  margin-left: 1%;
-  margin-top: 5%;
-  margin-bottom: 3%;
-  margin-right: 1%;
-  border-left: 0px solid #937341;
-}
-#secondParagraph{
-  padding-left: 3%;
-  margin-left: 1%;
-  margin-top: 5%;
-  margin-bottom: 3%;
-  border-left: 0px solid #937341;
-}
-.buttonC ul{
-  margin-right: 2%;
-}
-.buttonC ul li{
-  margin-bottom: 6%;
-}
-.buttonC ul li a {
-  font-size: 59%;
-}
-#textThird{
-  padding-left: 3%;
-  margin-left: 1%;
-  margin-top: 5%;
-  margin-bottom: 3%;
-  margin-right: 1%;
-  border-left: 0px solid #937341;
-}
-#thirdParagraph{
-  padding-left: 3%;
-  margin-left: 1%;
-  margin-top: 5%;
-  margin-bottom: 3%;
-  border-left: 0px solid #937341;
-}
-#selectors{
-  width: 267px;
-  height: 84px;
-}
-.lupaImg{
-  margin-top: 5%;
-}
-input{
-  height: 35px;
-  width: 124px;
-}
-select{
-  height: 35px;
-  width: 122px;
-}
-.modalContain {
-  margin-top: -97%;
-}
-#close{
-  font-size: 28px;
-  margin-bottom: 808px;
-  margin-left: -82px;
-}
- }
-@media (min-width: 600px) and (max-width: 1023px){
-  #textThird{
-    margin-top: 3%;
+  #titleL{
+    border-left: none;
   }
-  #thirdParagraph{
-    margin-top: 10%;
+  #firstParagraph, #textSecond, #secondParagraph, #textThird, #thirdParagraph{
+      font-size: 13px;
+      margin: 0;
+      border-left: 0px solid #937341;
   }
-  #textSecond{
-  margin-top: 3%;
+  #firstHome, #secondHome, #thirdHome, .height-100-destokp {
+    height: auto;
   }
-  #secondParagraph{
-    margin-top: 10%;
+  .modifications{
+    margin: 0;
   }
-  #close{
-    font-size: 28px;
-    margin-left: -91px;
-    margin-bottom: 990px;
+  .buttonC {
+    padding: 0.5rem;
+  }
+  .buttonC ul li {
+    display: flex;
+  }
+  .buttonC ul li a {
+    font-size: 10px;
+  }
+  #close-mobile {
+    display: block;
+  }
+  #close-destokp {
+    display: none;
+  }
+  .shadow-img {
+    background: #0000007a;
+  }
 }
-.lupaImg{
-  margin-top: 8%;
-}
-.modalContent{
-  margin-top: -391px;
-}
-
- }
 
 
 
